@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="inputText" value="uuu"/>
+    <div id="hasilText"></div>
+    <hr/>
+
+    <input type="radio" name="pilihan" class="inputCheckbox" value="Pilihan 1"/>Pilihan 1<br/>
+    <input type="radio" name="pilihan" class="inputCheckbox" value="Pilihan 2"/>Pilihan 2<br/>
+    <input type="radio" name="pilihan" class="inputCheckbox" value="Pilihan 3"/>Pilihan 3<br/>
+    <div id="hasilCheckbox"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("#inputText").val();
+
+            $(".inputCheckbox").change(function(){
+                var nilaiCheckbox = $(".inputCheckbox:radio:checked").val();
+                $("#hasilCheckbox").html(nilaiCheckbox);
+            })
+        });
+    </script>
+    
+</body>
+</html>

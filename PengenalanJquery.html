@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="element-special">Ini adalah element special</div>
+    <button id="tombol-hide">Hide</button>
+    <button id="tombol-show">Show</button>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#tombol-hide").click(function(){
+                $(".element-special").hide();
+            });
+            $("#tombol-show").click(function(){
+                $(".element-special").show();
+            });
+        });
+    </script>
+</body>
+</html>
